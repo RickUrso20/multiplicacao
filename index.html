@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicação</title>
+    <style type="text/css">
+        body{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        Primeiro número de inteiro: <input type="text" id="firstNumber">
+    </br>
+        Segundo número de inteiro: <input type="text" id="secondNumber">
+    </br>
+    <input type="button" onclick="multiplyBy()" value="Multiplicar">
+    </br>
+    </form>
+    
+    <p>
+        O resultado de multiplicação é: <br>
+        <span id="resultado"></span>
+    </p>
+    <script>
+        function multiplyBy() {
+            num1 = document.getElementById("firstNumber").value;
+            num2 = document.getElementById("secondNumber").value;
+            document.getElementById("resultado").innerHTML = num1 * num2;
+        }
+    </script>
+</body>
+</html>
